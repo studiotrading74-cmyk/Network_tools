@@ -31,6 +31,22 @@ Inserisci l'IP da scannerizzare: 127.0.0.1
 
 ---
 
+### `scanmap_tool.py` — ScanMap Tool
+Scansiona le porte TCP da 1 a 1024 su un host specificato tramite **nmap**,
+rileva il nome del servizio per ogni porta aperta e salva i risultati in un report `.txt` con timestamp.
+
+**Requisiti:**
+- nmap installato sul sistema (`sudo apt install nmap`)
+- libreria python-nmap (`pip install python-nmap`)
+
+**Esempio output report:**
+```
+Report scansione: 127.0.0.1
+Data: 20260406_190031
+────────────────────────────────────────
+Porta 631 | ipp | open
+```
+
 ## ⚠️ Avvertenza legale
 
 Questo tool è sviluppato a **scopo didattico**.  
